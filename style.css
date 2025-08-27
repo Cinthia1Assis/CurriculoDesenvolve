@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background: #2c3e50;
+  padding: 15px 20px;
+  color: #fff;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #f1c40f;
+}
+
+.apresentacao {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apresentacao__header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.apresentacao__header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.apresentacao__header span {
+  display: block;
+  margin-top: 5px;
+  color: #555;
+}
+
+.apresentacao__contato span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.apresentacao__main h1 {
+  margin: 20px 0 10px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.apresentacao__foto img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 4px solid #2c3e50;
+  object-fit: cover;
+}
+
+.educacao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.educacao > div {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.educacao h1 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.educacao__formacao-academica__curso,
+.educacao__certificacoes__certificacao {
+  margin-bottom: 15px;
+}
+
+.educacao__formacao-academica__curso h1 {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.educacao__formacao-academica__curso span p,
+.educacao__certificacoes__certificacao p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.experiencia-profissional {
+  margin-top: 30px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia-profissional h1 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.experiencia-profissional__experiencia {
+  margin-bottom: 20px;
+}
+
+.experiencia-profissional__experiencia h1 {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.experiencia-profissional__experiencia span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.experiencia-profissional__experiencia ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.experiencia-profissional__experiencia li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.habilidades-tecnicas {
+  margin-top: 30px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.habilidades-tecnicas h1 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.habilidades-tecnicas ul {
+  list-style: none;
+}
+
+.habilidades-tecnicas li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .apresentacao {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .apresentacao__foto img {
+    margin: 0 auto;
+  }
+
+  .educacao {
+    flex-direction: column;
+  }
+}
